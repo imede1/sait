@@ -108,6 +108,16 @@ li{
     border-radius: 12px;
     background-color: #5b616f;
 }
+#knopk{
+    
+    text-align: center;
+}
+#btn{
+    font-size: 30px;
+    border-radius: 10px;
+    background-color: #677f97;
+    
+}
 body{
     background-color: #333a4c;
 }
