@@ -118,6 +118,9 @@ li{
     background-color: #677f97;
     
 }
+form{
+    margin: 10px;
+}
 body{
     background-color: #333a4c;
 }
