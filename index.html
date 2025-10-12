@@ -46,6 +46,13 @@
   <input id='knopka' type="submit" value="Отправить">
 </form>
 </div>
+<div id="list">
+  <ul id="items">гол</ul>
+</div>
 
+<button hx-get="fragmentst/more-items.html" hx-target="#items" hx-swap="beforeend" hx-indicator=".spinner">Загрузить ещё </button>
+<div class="spinner" style="display: none;">Загрузка...</div>
+
+<script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </body>
 </html>

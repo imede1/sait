@@ -53,7 +53,14 @@ a:visited{
     border-radius: 12px;
     
 }
-
+#perehod{
+    background-color: #677f97;
+    margin: 30px;
+    margin-bottom: 50px;
+    border: black solid 2px;
+    border-radius: 12px;
+    padding: 5px;
+}
 h1{
     color: gray;
     text-align: center;
@@ -90,21 +97,21 @@ li{
 #ios{
     margin: 10px;
     border: 2px solid black;
-    padding: 5px;
+    padding: 20px;
     border-radius: 12px;
     background-color: #5b616f;
 }
 #semerka{
     margin: 10px;
     border: 2px solid black;
-    padding: 5px;
+    padding: 20px;
     border-radius: 12px;
     background-color: #5b616f;
 }
 #poco{
     margin: 10px;
     border: 2px solid rgb(0, 0, 0);
-    padding: 5px;
+    padding: 20px;
     border-radius: 12px;
     background-color: #5b616f;
 }
