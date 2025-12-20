@@ -1,58 +1,59 @@
 <!DOCTYPE html>
 <html lang="ru">
-
 <head>
-  <link rel="stylesheet" href="styles.css">
   <meta charset="UTF-8">
-  <title>dz</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Главная</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<nav>
-  <a id="navig" href="index.html">Главная</a>
-  <a id="navig" href="proekt.html">Май проектс</a>
-  <a id="navig" href="schetchik.html">Счётчик</a>
+<main class="grid-wrapper">
+
+    <div class="card span-2"> 
+        <h1 class="big-text">Пашков Артём</h1>
+        <p>Студент ВГТУ. <br>Добро пожаловать на мой сайт.</p>
+    </div>
+
+    
+    <div class="card">
+        <img src="photo/me.png" alt="Моё фото" style="height: 250px;">
+    </div>
+
+    <div class="card">
+        <h1>Увлечения</h1>
+        <ul>
+            <li>🎯 Практическая стрельба</li>
+            <li>🏊‍♂️ Плавание</li>
+            <li>🏋️‍♂️ Тяжелая атлетика</li>
+        </ul>
+    </div>
+
+
+    <div class="card">
+        <h1>Мой GitHub</h1>
+        <a class="btn" href="https://github.com/imede1" target="_blank">Открыть</a>
+    </div>
+
+
+    <div class="card span-2">
+        <h1>Связь</h1>
+        <form action="/send" method="post">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 10px;">
+                <input type="text" name="username" placeholder="Имя" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea name="message" rows="3" placeholder="Что у вас нового?"></textarea>
+            <button type="submit" class="btn">Отправить</button>
+        </form>
+    </div>
+
+</main>
+
+<nav class="dock-nav">
+  <a class="dock-link active" href="index.html">Главная</a>
+  <a class="dock-link" href="proekt.html">Проекты</a>
 </nav>
 
-<div id='shapka'> 
-<h1>Пашков Артём</h1>
-<p> Я студент ВГТУ, это моё дз</p>
-</div>
-<div id="uvlecheni">
-<p> Мои увлечения:</p>
-<ul>
-
-  <li>Практическая стрельба</li>
-  <li>Плавание</li>
-  <li>Тяжелая атлетика</li>
-
-</ul>
-</div>
-
-<span id="fotka">
-<img src="photo.jpg" alt="Моё фото" width="200" height="300">
-</span>
-<span id="sait">
-<a href="https://www.dns-shop.ru/product/e716ddac5fff3361/bp-aerocool-kcas-1000w-80-bronze-atx-24-apfc-140mm-fan-cm-2444-10xsata-6xpci-e-kcas-1000m/"
-   target="_blank">Мой любимый сайт</a>
-</span>
-<div id="forma">
-<form action="/send" method="post">
-  <ul id="emaili">
-  <li><label> Имя: <input type="text" name="username" required></label></li>
-  <li><label>Email: <input  type="email" name="email" required></label></li>
-  </ul>
-  <textarea name="message" rows="5" placeholder="Ваше сообщение"></textarea>
-  <input id='knopka' type="submit" value="Отправить">
-</form>
-</div>
-<div id="list">
-  <ul id="items">гол</ul>
-</div>
-
-<button hx-get="fragmentst/more-items.html" hx-target="#items" hx-swap="beforeend" hx-indicator=".spinner">Загрузить ещё </button>
-<div class="spinner" style="display: none;">Загрузка...</div>
-
-<script src="https://unpkg.com/htmx.org@1.9.10"></script>
 </body>
 </html>
